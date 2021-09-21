@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <title>Demo 02</title>
+</head>
+
+<body>
+  <h1>Selector</h1>
+
+  <ul id="list">
+    <li class="a">item 1</li>
+    <li class="a">item 2</li>
+    <li class="b">item 3</li>
+    <li class="b">item 4</li>
+    <li class="a">item 1</li>
+    <li class="a">item 2</li>
+    <li class="b">item 3</li>
+    <li class="b">item 4</li>
+  </ul>
+
+  <p class="a">This is paragraph with A Class</p>
+  <p id="para2">This is paragraph with #para2</p>
+  <p class="b">This is paragraph with B Class</p>
+  <p>This is paragraph</p>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("li:first").css("border", "1px solid #cc3366");
+      $("li:last").css("border", "1px solid #33cc66");
+      $("li:even").css("background-color", "#33cccc");
+      $("li:eq(4)").css("color", "#cc3366");
+    });
+  </script>
+</body>
+
+</html>

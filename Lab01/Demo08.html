@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <title>Demo 07</title>
+</head>
+
+<body>
+  <h1>Demo event</h1>
+  <div>
+    <label>So A</label>
+    <input type="text" id="SoA" />
+  </div>
+  <div>
+    <label>So B</label>
+    <input type="text" id="SoB" />
+  </div>
+  <div>
+    <button type="button" id="btnCong">Cong</button>
+    <button type="button" id="btnTru">Tru</button>
+    <button type="button" id="btnNhan">Nhan</button>
+    <button type="button" id="btnChia">Chia</button>
+  </div>
+  <div>
+    Ket qua: <span></span>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("div").css("margin", "5px");
+
+      $("#btnCong").click(function () {
+        var SoA = parseInt($("#SoA").val());
+        var SoB = parseInt($("#SoB").val());
+
+        $("span").text(SoA + SoB);
+      });
+
+      $("#btnTru").click(function () {
+        var SoA = parseInt($("#SoA").val());
+        var SoB = parseInt($("#SoB").val());
+
+        $("span").text(SoA - SoB);
+      });
+
+      $("#btnNhan").click(function () {
+        var SoA = parseInt($("#SoA").val());
+        var SoB = parseInt($("#SoB").val());
+
+        $("span").text(SoA * SoB);
+      });
+
+      $("#btnChia").click(function () {
+        var SoA = parseInt($("#SoA").val());
+        var SoB = parseInt($("#SoB").val());
+        if(SoB == 0) {
+          $("span").text("Loi chia Zero");
+        } else {
+          $("span").text(SoA / SoB);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
