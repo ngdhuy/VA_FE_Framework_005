@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <title>Demo 07</title>
+  <style type="text/css">
+    div {
+      width: 400px;
+      height: 300px;
+      border: 1px solid #cc3366;
+      text-align: center;
+      line-height: 300px;
+      margin: 5px;
+    }
+
+    .fillBackground{
+      background-color: #c9c988;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Demo event</h1>
+  <div>This is value</div>
+  <button type="button" id="btnShow">Show</button>
+  <button type="button" id="btnHidden">Hidden</button>
+  <button type="button" id="btnFadeIn">Fade-in</button>
+  <button type="button" id="btnFadeOut">Fade-out</button>
+  <button type="button" id="btnToggle">Toggle</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#btnShow").click(function() {
+        $("div").show(500);
+      })
+
+      $("#btnHidden").click(function() {
+        $("div").hide(300);
+      })
+
+      $("#btnFadeIn").click(function() {
+        $("div").fadeIn(500);
+      })
+
+      $("#btnFadeOut").click(function(){
+        $("div").fadeOut(500);
+      })
+
+      $("#btnToggle").click(function(){
+        $("div").toggle(300);
+      })
+    });
+  </script>
+</body>
+
+</html>
