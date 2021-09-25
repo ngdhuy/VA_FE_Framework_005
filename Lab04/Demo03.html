@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Pesudo</title>
+  <style type="text/css">
+    a { 
+      text-decoration: none;
+      color: #fff;
+      width: 200px;
+      height: 25px;
+      line-height: 25px;
+      display: block;
+      margin-bottom: 1px;
+      padding-left: 10px;
+    }
+
+    /* Selector = Pesudo */
+    a:nth-child(even) { background-color: #cc3366; }
+    a:nth-child(odd) { background-color: #6633cc;}
+    
+    a:hover { background-color: #33cc66; }
+    a:active { background-color: #3366cc; }
+  </style>
+</head>
+<body>
+  <a href="#">Menu 1</a>
+  <a href="#">Menu 2</a>
+  <a href="#">Menu 3</a>
+  <a href="#">Menu 4</a>
+</body>
+</html>
