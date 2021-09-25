@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style type="text/css">
+    .blue-style {
+      background-color: #3366cc;
+    }
+
+    #footer {
+      background-color: #33cc66;
+      font-size: 1.5rem;
+    }
+
+    h2 { 
+      font-style: italic;
+    }
+
+    /* Selector = Grouping CSS */
+    h2, #footer, .blue-style { 
+      color: #cc3366;
+      padding: 5px;
+    }
+
+    /* Selector = Pesudo */
+    div p { 
+      border: 1px solid #cc3366;
+    }
+
+    div > p { 
+      background-color: #295135;
+      color: #fff;
+    }
+
+    div * {
+      box-shadow: 5px 5px 5px rgba(120, 200, 80, 0.25);
+    }
+
+    .small > p { 
+      font-size: 0.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="blue-style">Grouping, Contextual</h1>
+  <h2>This is sub-title</h2>
+
+  <p>This is paragraph 1</p>
+  <p>This is paragraph 2</p>
+  <p class="blue-style">This is paragraph 3</p>
+
+  <div class="small">This is BLOCK in Body
+    <p>This is paragraph in DIV</p>
+    <a href="#">Link to another</a>
+  </div>
+
+  <div>
+    <p>This paragraph 1 in DIV</p>
+    <p>This paragraph 2 in DIV</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li class="blue-style">Item 3</li>
+      <li>Item 4
+        <p>This is Paragraph in LI</p>
+      </li>
+    </ul>
+    <a href="https://www.google.com">Navigate to Google</a>
+  </div>
+  <div id="footer">This is footer</div>
+</body>
+</html>
