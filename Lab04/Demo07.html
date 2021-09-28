@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style type="text/css">
+    .box-item-1 { background-color: #ffc205; }
+    .box-item-2 { background-color: #eb1d65; }
+    .box-item-3 { background-color: #663bb7; }
+    .box-item-4 { background-color: #76b947; }
+
+    .box-item {
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .box-1 { 
+      display: flex; 
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      justify-content: center;
+    }
+
+    .box-2 { 
+      display: flex; 
+      /* justify-content: space-between; */
+      justify-content: space-around;
+      /* justify-content: space-evenly; */
+    }
+
+    .box-3 { 
+      display: flex;
+      height: 200px;
+      border: 1px solid #cc3366;
+      /* align-items: stretch; */
+      align-items: flex-end;
+    }
+
+    .box-4 { 
+      display: flex; 
+      min-height: 300px;
+      border: 1px solid #cc3366;
+      flex-wrap: wrap;
+      /* align-content: space-between; */
+      align-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demo Flexbox</h1>
+  
+  <h2>Justified-content</h2>
+  <div class="box-1">
+    <div class="box-item-1 box-item">1</div>
+    <div class="box-item-2 box-item">2</div>
+    <div class="box-item-3 box-item">3</div>
+  </div>
+
+  <h2>Justified-content - space</h2>
+  <div class="box-2">
+    <div class="box-item-1 box-item">1</div>
+    <div class="box-item-2 box-item">2</div>
+    <div class="box-item-3 box-item">3</div>
+  </div>
+
+  <h2>Align-element</h2>
+  <div class="box-3">
+    <div class="box-item-1 box-item">1</div>
+    <div class="box-item-2 box-item">2</div>
+    <div class="box-item-3 box-item">3</div>
+    <div class="box-item-4 box-item">4</div>
+  </div>
+
+  <h2>Align-content</h2>
+  <div class="box-4">
+    <div class="box-item-1 box-item">1</div>
+    <div class="box-item-2 box-item">2</div>
+    <div class="box-item-3 box-item">3</div>
+    <div class="box-item-4 box-item">4</div>
+    <div class="box-item-1 box-item">5</div>
+    <div class="box-item-2 box-item">6</div>
+    <div class="box-item-3 box-item">7</div>
+    <div class="box-item-4 box-item">8</div>
+  </div>
+</body>
+</html>
