@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffaebc;
+  width: 80%;
+  pading: 0;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #a0e7e5;
+  height: 100px;
+  width: 80%;
+  line-height: 100px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  background-color: #fbe7c6;
+  height: 30px;
+  width: 80%;
+  position: fixed;
+  top: 100px;
+}
+
+aside {
+  background-color: #b4f8c8;
+  min-height: 300px;
+  width: 20%;
+  float: left;
+  margin-top: 130px;
+}
+
+article {
+  background-color: #b8a7b1;
+  min-height: 800px;
+  width: 60%;
+  float: left;
+  margin-top: 130px;
+}
+
+footer {
+  background-color: #887bb0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  clear: both;
+}
+
+section {
+  background-color: #fff4bd;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.menu, .sub-menu {
+  background-color: #bbe7fe;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  background-color: #d3b5e5;
+  margin-bottom: 1px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 0 0 10px;
+}
+
+.menu li:hover {
+  background-color: #eff1db;
+}
+
+.sub-menu {
+  position: absolute;
+  margin: -25px 0 0 15%;
+  width: 100px;
+  visibility: hidden;
+}
+
+.menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=Demo04.css.map */
