@@ -68,6 +68,7 @@ header {
   background: url("../img/bg-masthead.jpg");
   background-repeat: none;
   background-position: center center;
+  background-size: cover;
   min-height: 100vh;
 }
 
