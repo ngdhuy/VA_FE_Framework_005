@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap - Layout</title>
+  <!-- Include BootStrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    .container {
+      background-color: var(--color-blue);
+    }
+
+    .item {
+      border: 1px solid var(--color-red);
+      background-color: var(--color-green);
+      color: var(--color-white);
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container overflow-hidden">
+    <div class="row">
+      <div class="item col-4">Column 1</div>
+      <div class="item col-6">Column 2</div>
+      <div class="item col">Column 3</div>
+    </div>
+    <div class="row row-cols-2">
+      <div class="item col">Item 1</div>
+      <div class="item col">Item 2</div>
+      <div class="item col">Item 3</div>
+      <div class="item col">Item 4</div>
+    </div>
+    <div class="row row-cols-auto">
+      <div class="item col">Item 1</div>
+      <div class="item col">Item 2</div>
+      <div class="item col">Item 3</div>
+      <div class="item col">Item 4</div>
+    </div>
+    <div class="row gx-2 gy-1">
+      <div class="item col p-3">Column 1</div>
+      <div class="item col p-3">Column 2</div>
+      <div class="item col p-3">Column 3</div>
+      <div class="item col p-3">Column 4</div>
+    </div>
+    <div class="row g-2">
+      <div class="col">
+        <div class="p-3 border bg-light">Item 1</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Item 2</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Item 3</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Item 4</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Item 5</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Item 6</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Include BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
