@@ -215,5 +215,5 @@ p {
 .footer-icon {
   display: inline-block;
   font-size: 6rem;
-  color: var(--color-green)
+  color: var(--color-green);
 }
