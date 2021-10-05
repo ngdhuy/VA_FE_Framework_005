@@ -133,3 +133,87 @@ p {
   font-size: 2.5rem;
   border-radius: 50%;
 }
+
+#callout {
+  min-height: 100vh;
+  background: url("../img/bg-callout.jpg");
+  background-repeat: none;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#portfolio {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.portfolio-item {
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  transition: clip-path 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  -webkit-clip-path: inset(-1px);
+  clip-path: inset(-1px);
+  max-width: 100%;
+}
+
+.portfolio-item:hover img {
+  -webkit-clip-path: inset(2rem);
+  clip-path: inset(2rem);
+}
+
+.caption {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(33, 37, 41, 0.2);
+  color: #fff;
+  text-align: left;
+  padding: 50px;
+  z-index: 1;
+  font-size: 1rem;
+
+  transition: background-color 0.7s, webkit-clip-path 0.25s ease-out;
+  transition: clip-path 0.25s ease-out, background-color 0.7s; 
+  transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+  -webkit-clip-path: inset(0px);
+  clip-path: inset(0px);
+}
+
+.portfolio-item:hover .caption {
+  -webkit-clip-path: inset(2rem);
+  clip-path: inset(2rem);
+  background-color: rgba(33, 37, 41, 0.75);
+  padding: 10px 50px;
+}
+
+.caption div {
+  margin-top: 12rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#action { 
+  min-height: 100vh;
+  background-color: var(--color-green);
+}
+
+#action h3 {
+  color: #fff;
+}
+
+#map, #footer { min-height: 50vh; }
+
+.footer-icon {
+  display: inline-block;
+  font-size: 6rem;
+  color: var(--color-green)
+}
